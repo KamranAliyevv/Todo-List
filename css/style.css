@@ -1,0 +1,104 @@
+
+.container{
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.todo-checked{
+    text-decoration: line-through;
+    color:red;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.article h2{
+    font-size: 30px;
+}
+.todo{
+    background-color: crimson;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+#todo-form{
+    margin-bottom: 30px;
+}
+#todo-form .form-inner{
+    position: relative;
+    width: 400px;
+}
+#todo-form input{
+    border:0;
+    outline: 0;
+    padding: 10px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+#todo-form button{
+    height: 100%;
+    padding: 5px 13px;
+    border: 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-color:orangered;
+}
+
+.todo-lists{
+    display: flex;
+    flex-direction: column;
+}
+.todo-item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 10px;
+    border-radius:5px;
+    padding: 2px 5px;
+}
+.changed-btns{
+    display: flex;
+}
+.changed-btns button{
+    color: #fff;
+    border: 0;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius:3px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.edit{
+    background-color: green;
+}
+.delete{
+    background-color: red;
+}
+.clear{
+    background-color: orangered;
+    border: 0;
+    width: 100%;
+    color: #fff;
+    padding:5px;
+    cursor: pointer;
+    border-radius:5px;
+}
+

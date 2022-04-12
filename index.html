@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="todo">
+        <div class="container">
+            <div class="todo-inner">
+               <div class="article">
+                <h2>Todo List</h2>
+                <div class="all-select">
+                    <input type="checkbox" id="selectAll">
+                    <label for="selectAll">Select All</label>
+                </div>
+               </div>
+
+                <form id="todo-form">
+                   <div class="form-inner">
+                    <input type="name" id="todo-input" placeholder="Add New">
+                    <button class="add">+</button>
+                   </div>
+
+                </form>
+
+                <div id="todo-list">
+                   
+                </div>
+                <button class="clear" disabled="false">Clear</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/new.js"></script>
+</body>
+</html>
