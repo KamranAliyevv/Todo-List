@@ -16,6 +16,22 @@ button[disabled]{
 }
 
 
+.todo{
+    background-color: crimson;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    background-image:url("../images/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.todo-inner{
+    width: 400px;
+}
+
 .article{
     display: flex;
     justify-content: space-between;
@@ -26,19 +42,11 @@ button[disabled]{
 .article h2{
     font-size: 30px;
 }
-.todo{
-    background-color: crimson;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-}
 #todo-form{
     margin-bottom: 30px;
 }
 #todo-form .form-inner{
     position: relative;
-    width: 400px;
 }
 #todo-form input{
     border:0;
@@ -73,9 +81,21 @@ button[disabled]{
     margin-bottom: 10px;
     border-radius:5px;
     padding: 2px 5px;
+    position: relative;
+}
+.todo-item p{
+    color: green;
+    font-size: 16px;
+    margin-left: 5px;
+    word-break: break-word;
+    max-width: 50%;
+}
+.todo-item input{
+    cursor: pointer;
 }
 .changed-btns{
     display: flex;
+    margin-left: auto;
 }
 .changed-btns button{
     color: #fff;
@@ -84,13 +104,17 @@ button[disabled]{
     padding: 5px 10px;
     border-radius:3px;
     cursor: pointer;
-    margin-right: 5px;
 }
 .edit{
     background-color: green;
 }
 .delete{
     background-color: red;
+}
+.date{
+    font-size: 14px;
+    padding: 7px;
+    transition: .5s;
 }
 .clear{
     background-color: orangered;
@@ -100,5 +124,16 @@ button[disabled]{
     padding:5px;
     cursor: pointer;
     border-radius:5px;
+}
+
+@media (max-width:500px){
+    .container{
+        width: 100%;
+    }
+
+    .todo-inner{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
